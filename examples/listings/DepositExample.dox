@@ -1,0 +1,23 @@
+	Printing deposit
+
+Name: deposit2
+Object: Deposit
+TradeDate: 2015-05-15
+StartDate: 2015-05-19
+Maturity: 2015-11-19
+Notional:  2'000'000.00
+Rate: 4.9500% (ACT365_Simple)
+
+	Prizing deposit
+
+Object: Deposit
+TradeDate: 2014-10-24
+StartDate: 2014-10-24
+Maturity: 2015-11-06
+Notional:  307'000.00
+Rate: 5.4800% (ACT365_Simple)
+
+Date                     CF            DF           DCF
+2015-11-06        324'422.80       0.9863799      320'004.11
+Value of deposit:  320'004.11
+

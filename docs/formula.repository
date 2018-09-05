@@ -1,0 +1,262 @@
+\form#0:$ f(x)=0.3 e^{-x} sin(x^2) + \frac{cos(x)}{1000} - \frac{45 x^2 e^x}{1000000}$
+\form#1:\[ \arg \min_{x y} 4 x^2 + 2 xy + 5 y^2 + 1.5 x - 2 y\]
+\form#2:\[\begin{array}{rcr} \text{subject to } & \\ & 2 \leq 2x + y \leq \infty \\ & -\infty \leq -x + 2y \leq 6 \\ & x \in [0, 20] \text{ and } y \in [0, \infty] \end{array}\]
+\form#3:\[ \arg \min_{x y} \frac{1}{2} (8 x^2 + 4 xy + 10 y^2) + 1.5 x - 2 y = \arg \min_{x y} \frac{1}{2} \mathbf{x^T} Q \mathbf{x} + C \mathbf{x^T} \]
+\form#4:\[\begin{array}{rcr} \text{subject to } & \\ & \textbf{a} \leq A\textbf{x} \leq \textbf{b} \\ & \textbf{c} \leq \textbf{x} \leq \textbf{d} \end{array}\]
+\form#5:\[\begin{array}{rcr} \text{where } & \\ Q = & \begin{bmatrix} 8 & 2 \\ 2 & 10 \end{bmatrix} \\ C = & \begin{bmatrix} 1.5 \\ -2 \end{bmatrix} \\ A = & \begin{bmatrix} 2 & 1 \\ -1 & 2 \end{bmatrix} \\ \textbf{a} = & \begin{bmatrix} 2 \\ -\infty \end{bmatrix} \\ \textbf{b} = & \begin{bmatrix} \infty \\ 6 \end{bmatrix} \\ \textbf{c} = & \begin{bmatrix} 0 \\ 0 \end{bmatrix} \\ \textbf{d} = & \begin{bmatrix} 20 \\ \infty \end{bmatrix} \end{array}\]
+\form#6:\[f(x,y)=(a-x)^{2}+b(y-x^{2})^{2}\]
+\form#7:$ (x,y)=(a,a^{2})$
+\form#8:\[YearFraction(dates_1,date_2) = \frac{\textrm{Actual number of days between } date_1 \textrm{ and } date_2}{360}\]
+\form#9:\[YearFraction(dates_1,date_2) = \frac{\textrm{Actual number of days between } date_1 \textrm{ and } date_2 + 1 \textrm{ day}}{360}\]
+\form#10:\[YearFraction(dates_1,date_2) = \frac{\textrm{Actual number of days between } date_1 \textrm{ and } date_2}{365}\]
+\form#11:\[YearFraction(date_1,date_2) = \frac{\textrm{Actual number of days}}{\textrm{Denominator}}\]
+\form#12:$(date_1,date_2)$
+\form#13:\[YearFraction(date_1,date_2) = \frac{\textrm{Number of days in non-leap year}}{365} + \frac{\textrm{Number of days in leap year}}{366}\]
+\form#14:\[YearFraction(date_1,date_2) = \frac{360 \times (Y_{2}-Y_{1}) +30 \times (M_{2}-M_{1})+min(D_{2},30) - min(D_{1},30)}{360}\]
+\form#15:$\textrm{Y}_{i}$
+\form#16:$\textrm{date}_{i}$
+\form#17:$\textrm{M}_{i}$
+\form#18:$\textrm{D}_{i}$
+\form#19:\[YearFraction(dates_1,date_2) = \frac{360(Y_2 - Y_1)+30(M_2-M_1)+(D_2-D_1)}{360}\]
+\form#20:$Y_i$
+\form#21:$date_i$
+\form#22:$M_i$
+\form#23:$D_i$
+\form#24:\[max(Spot_{T}-K,0)\]
+\form#25:\[max(K-Spot_{T},0)\]
+\form#26:\[Prize = DF \frac{1}{\#paths} \sum^{n=\#paths}_{n=1} Payoff(S_{n}(T_{expiry}))\]
+\form#27:\[\textrm{Future Value} = (1 + \textrm{Interest Rate})^{\textrm{Accrual Period}}\]
+\form#28:\[\textrm{Interest Rate} = \sqrt[\textrm{Accrual Period}]{\textrm{Future Value}}-1\]
+\form#29:\[\textrm{Future Value} = (1 + \textrm{Interest Rate})^{\textrm{Accrual Time}}\]
+\form#30:\[\textrm{Interest Rate} = \frac{ln(\textrm{Future Value})}{\textrm{Accrual Time}}\]
+\form#31:\[\textrm{Future Value} = e^{\textrm{Interest Rate} \times \textrm{Accrual Period}}\]
+\form#32:\[\textrm{Future Value} = e^{\textrm{Interest Rate} \times \textrm{Accrual Time}}\]
+\form#33:\[\textrm{Future Value} = (1 + \textrm{Interest Rate} \div \textrm{frequency} )^{\textrm{frequency} \times \textrm{Accrual Period}}\]
+\form#34:\[\textrm{Interest Rate} = (\sqrt[\textrm{frequency}]{\textrm{Future Value}}-1) \times frequency\]
+\form#35:\[\textrm{Future Value} = (1 + \frac{\textrm{Interest Rate}}{ \textrm{frequency}} )^{\textrm{frequency} \times \textrm{Accrual Time}}\]
+\form#36:\[\textrm{Future Value} = 1 + \textrm{Interest Rate} \times \textrm{Accrual Time}\]
+\form#37:\[\textrm{Interest Rate} = \frac{\textrm{Future Value}-1}{\textrm{Accrual Time}}\]
+\form#38:\[\textrm{Future Value} = 1 + \textrm{Interest Rate} \times \textrm{Accrual Period}\]
+\form#39:\[\textrm{Interest Rate} = \frac{\textrm{Future Value}-1}{\textrm{Accrual Period}}\]
+\form#40:\[ \left(\begin{array}{@{}cccc@{}} 1 & 0 & 0 & 0 \\ -1 & 1+r_{Depo6M} & 0 & 0 \\ 0 & -1 & 1+r_{FRA 6x12} & 0 \\ -1 & 0 & r_{IRS 2Y} & 1+r_{IRS 2Y} \\ \end{array}\right) \]
+\form#41:\[ CF = \left(\begin{array}{@{}cccc@{}} 1 & 0 & 0 & 0 \\ -1 & 1+r_{Depo6M} & 0 & 0 \\ 0 & -1 & 1+r_{FRA 6x12} & 0 \\ -1 & 0 & r_{IRS 2Y} & 1+r_{IRS 2Y} \\ \end{array}\right) \]
+\form#42:\[ \left(\begin{array}{@{}cccc@{}} 1 & 0 & 0 & 0 \\ -1 & 1+r_{Depo6M} & 0 & 0 \\ 0 & -1 & 1+r_{FRA 6x12} & 0 \\ -1 & 0 & r_{IRS 2Y} & 1+r_{IRS 2Y} \\ \end{array}\right) \times \left( \begin{array}{@{}c@{}} DF_{today} \\ DF_{6M} \\ DF_{1Y} \\ DF_{2Y}\end{array}\right) = \left( \begin{array}{@{}c@{}} 1 \\0 \\ 0 \\ 0 \end{array}\right) \]
+\form#43:\[Cost_{f} = a \int^{tN}_{t0} \Big(\frac{df(x)}{dx}\Big)^2 dx + b \int^{tN}_{t0} \Big(\frac{df^2(x)}{dx^2}\Big)^2 dx \]
+\form#44:\[q_i -tolerante_{lower} < r_i < q_i + tolerance_{upper}\]
+\form#45:$q_i$
+\form#46:\[\frac{df(x)}{dx}|_{x=x_i} \approx \frac{f(x_{i+1}) - f(x_{i})}{x_{i+1}-x_{i}}\]
+\form#47:$F = [f(x_1), f(x_2), ..., f(x_n)]$
+\form#48:\[\frac{dF}{sX} = X^{-1} \times D_{1} \times F\]
+\form#49:\[ D_{1} = \begin{bmatrix} 0 & 0 & 0 & \dots & 0 & 0 \\ -1 & 1 & 0 & \dots & 0 & 0 \\ 0 & -1 & 1 & \dots & 0 & 0 \\ 0 & 0 &-1 & \dots & 0 & 0 \\ \hdotsfor{6} \\ 0 & 0 & 0 & \dots & -1 & 1 \end{bmatrix}\]
+\form#50:\[ X = \begin{bmatrix} x_{1} - x_{0} & 0 & 0 & \dots & 0 & 0 \\ 0 & x_{2} - x_{1} & 0 & \dots & 0 & 0 \\ 0 & 0 & x_{3} - x_{2} & \dots & 0 & 0 \\ 0 & 0 & 0 & \dots & 0 & 0 \\ \hdotsfor{6} \\ 0 & 0 & 0 &\dots & 0 & x_{n}-x_{n-1} \end{bmatrix}\]
+\form#51:\[\frac{dF}{dX} = X^{-1} \times D_{1} \times F\]
+\form#52:\[ Cost = \int^{tN}_{t0} \Big(\frac{df(x)}{dx}\Big)^2 dx\]
+\form#53:\[Cost_{f} = \underline{a \int^{tN}_{t0} \Big(\frac{df(x)}{dx}\Big)^2 dx} + b \int^{tN}_{t0} \Big(\frac{df^2(x)}{dx^2}\Big)^2 dx \]
+\form#54:\[ \int^{tN}_{t0} \Big(\frac{df(x)}{dx}\Big)^2 dx \approx \sum^{i=N-1}_{i=0}\Big(\frac{x(t_{i+1}) - x(t_{i})}{t_{i+1}-t_i}\Big)^2 = x^T D^T_1D_1 x = x^T Q x\]
+\form#55:$D_1$
+\form#56:$t_i$
+\form#57:\[\frac{d^2f(x)}{dx^2}|_{x=x_i} \approx \frac{f(x_{i+1}) - 2f(x_{i}) + f(x_{i-1})}{x_{i+1}-x_{i-1}}\]
+\form#58:\[\frac{dF}{sX} = X^{-1} \times D_{2} \times F\]
+\form#59:\[ D_{2} = \begin{bmatrix} 0 & 0 & 0 & 0 & \dots & 0 & 0 \\ 0 & 0 & 0 & 0 & \dots & 0 & 0 \\ 1 &-2 & 1 & 0 & \dots & 0 & 0 \\ 0 & 1 &-2 & 1 & \dots & 0 & 0 \\ \hdotsfor{7} \\ 0 & 0 & 0 & \dots & 1 & -2 & 1 \end{bmatrix}\]
+\form#60:\[ X = \begin{bmatrix} x_{2} - x_{0} & 0 & 0 & \dots & 0 & 0 \\ 0 & x_{3} - x_{1} & 0 & \dots & 0 & 0 \\ 0 & 0 & x_{4} - x_{2} & \dots & 0 & 0 \\ 0 & 0 & 0 & \dots & 0 & 0 \\ \hdotsfor{6} \\ 0 & 0 & 0 &\dots & 0 & x_{n}-x_{n-2} \end{bmatrix}\]
+\form#61:\[ Cost = \int^{tN}_{t0} \Big(\frac{df^2(x)}{dx^2}\Big)^2 dx\]
+\form#62:\[Cost_{f} =a \int^{tN}_{t0} \Big(\frac{df(x)}{dx}\Big)^2 dx + \underline{b \int^{T}_t \Big(\frac{df^2(x)}{dx^2}\Big)^2 dx} \]
+\form#63:\[ \int^{tN}_{t0} \Big(\frac{df^2(x)}{dx^2}\Big)^2 dx \approx \sum^{i=N-2}_{i=0}\Big(\frac{x(t_{i+2})- 2x(t_{i+1}) + x(t_{i})}{(t_{i+2}-t_i)^2}\Big)^2 = x^T D^T_2D_2 x = x^T Q x\]
+\form#64:$D_2$
+\form#65:$x$
+\form#66:$a, b$
+\form#67:$t0,tN$
+\form#68:$\int^{t0}_{tN} \Big(\frac{df(x)}{dx}\Big)^2 dx$
+\form#69:$\int^{tN}_{t0} \Big(\sqrt{1-\frac{df(x)}{dx}\Big)^2} dx$
+\form#70:$isntr_1$
+\form#71:$date_1$
+\form#72:$C$
+\form#73:$= [today, date_1 ] $
+\form#74:$= [1.0, DF1 ] $
+\form#75:$f1(DF1) = isntr_{1}.price(C)$
+\form#76:$isntr_2$
+\form#77:$date_2$
+\form#78:$= [date_1, date_2 ] $
+\form#79:$= [DF1, DF2]$
+\form#80:$f2(DF2) = isntr_{2}.price(C)$
+\form#81:$isntr_3$
+\form#82:$date_3$
+\form#83:$= [date_1, date_2, date_3 ] $
+\form#84:$= [DF1, DF2, DF3]$
+\form#85:$f3(DF3) = isntr_{3}.price(C)$
+\form#86:\[DF(date_x) = DF^{\frac{YF(today,date_x)}{YF(today,date)}}\]
+\form#87:$date_x$
+\form#88:$date$
+\form#89:\[DF(date) = \frac{DF_{disc}(date) * Fwd(date)}{S}\]
+\form#90:\[variance = yearFraction(today, T) \times volatility^{2}\]
+\form#91:\[variance = T *\times volatility^{2}\]
+\form#92:\[ \begin{aligned} C & = i_{cp} (S e^{-q T_{today,maturity} }N(i_{cp} d_{1}) - K e^{-r T_{today,maturity}} N(i_{cp}d_{2})) \\ d_{1} & = \frac{ln(\frac{S}{K}) + (r - q) T_{today,maturity} + \frac{var}{2} }{\sqrt{var}} \\ d_{2} & = \frac{ln(\frac{S}{K}) + (r - q) T_{today,maturity} - \frac{var}{2} }{\sqrt{var}} \\ var & = \sigma^2(K, expiry) T_{today, expiry} \end{aligned}\]
+\form#93:$S$
+\form#94:$K$
+\form#95:$\sigma$
+\form#96:$r,q$
+\form#97:$i_{cp}$
+\form#98:$N()$
+\form#99:\[{\frac {\partial V}{\partial t}}+{\frac {1}{2}}\sigma ^{2}S^{2}{\frac {\partial ^{2}V}{\partial S^{2}}}+rS{\frac {\partial V}{\partial S}}-rV=0\]
+\form#100:\[dS_t = (r-q) S_t dt + \sigma S_t dW_t^Q\]
+\form#101:\[CDF_{X}(t) = \int^{t}_{-\infty} \frac{1}{\sqrt{2\pi \sigma^{2}}}e^{-\frac{(x-\mu )^{2}}{2\sigma ^{2}}} dx \]
+\form#102:\[PDF_{X}(t) = \frac{1}{\sqrt{2\pi \sigma^{2}}}e^{-\frac{(x-\mu )^{2}}{2\sigma ^{2}}} \]
+\form#103:\[CDF_{X}(t) = Pr(X < t)\]
+\form#104:\[PDF_{X}(t) = \frac{d CDF_{X}(t)}{dt}\]
+\form#105:$\lambda$
+\form#106:\[CDF(t - location | location) = CDF(t | 0.0)\]
+\form#107:\[CDF(t / scale | scale) = CDF(t | 1.0)\]
+\form#108:\[CDF_{X}(x) = \begin{cases} 0 & \quad \text{if } x < A \\ \frac{x-A}{B-A} & \quad \text{if } x \in [A,B) \\ 1 & \quad \text{if } x > B \end{cases} \]
+\form#109:\[\begin{array}{rcr} a & = \hat{\mu} - \sqrt{3}*\hat{\sigma} \\ b & = \hat{\mu} + \sqrt{3}*\hat{\sigma} \end{array}\]
+\form#110:\[PDF_{X}(t) = \begin{cases} \frac{1}{B-A} \quad \text{if } x \in [A,B] \\ 0 \quad \text{ otherwise} \end{cases}\]
+\form#111:$y$
+\form#112:$(x_j,y_j)$
+\form#113:$(x_{j+1},y_{j+1})$
+\form#114:$(x,y)$
+\form#115:\[ y = y_j + \frac{y_{j+1} - y_j}{x_{j+1}^3 - x_j^3} (x^3-x_j^3)\]
+\form#116:\[ y = y_j\]
+\form#117:\[ y = y_{j+1}\]
+\form#118:\[ y = y_j + \frac{y_{j+1} - y_j}{x_{j+1} - x_j} (x-x_j)\]
+\form#119:\[ y = y_j + \frac{y_{j+1} - y_j}{ln(x_{j+1}) - ln(x_j)} (ln(x) - ln(x_j))\]
+\form#120:$(x_{i-1},x_{i})$
+\form#121:$i = 0,1,..,n$
+\form#122:\[f_{i}(x) = a_{i} x^{3} + b_{i} x^{2} + c_{i} x + d_{i} for x \in (x_{i-1}, x_{i})\]
+\form#123:$(x_{i},y_{i})$
+\form#124:$f_{j}$
+\form#125:$j = 1,..,n$
+\form#126:$ f_{i}(x_{i-1}) = y_{i-1}$
+\form#127:$ i = 1,..,n $
+\form#128:$ f_{i}(x_{i}) = y_{i}$
+\form#129:$ \frac{df_{i}(x)}{dx}|_{x=x_{i}} = \frac{df_{i+1}(x)}{dx}|_{x=x_{i}}$
+\form#130:$ i = 1,..,n-1 $
+\form#131:$ \frac{d^{2}f_{i}(x)}{dx^{2}}|_{x=x_{i}} = \frac{d^{2}f_{i+1}(x)}{dx^{2}}|_{x=x_{i}}$
+\form#132:$ \frac{d^{2}f_{1}(x)}{dx^{2}}|_{x=x_{0}} = 0 $
+\form#133:$ \frac{d^{2}f_{n}(x)}{dx^{2}}|_{x=x_{n}} = 0 $
+\form#134:\[ y = y_j + \frac{y_{j+1} - y_j}{x_{j+1}^2 - x_j^2} (x^2-x_j^2) \]
+\form#135:$\frac{df}{dx}(x) = \frac{f(x+h)-f(x-h)}{2h}$
+\form#136:$\frac{d^2f}{dx^2}(x) = \frac{f(x+h)-2f(x) + f(x-h)}{h^2}$
+\form#137:$\frac{df}{dx}(x) = \frac{f(x+h)-f(x)}{h}$
+\form#138:$\frac{d^2f}{dx^2}(x) = \frac{f(x+2h)-2f(x+h)+f(x)}{h^2}$
+\form#139:$\frac{df}{dx}(x) = \frac{f(x)-f(x-h)}{h}$
+\form#140:$\frac{df}{dx}(x) = \frac{f(x)-2f(x-h) + f(x-2h)}{h^2}$
+\form#141:$f(x) = 0$
+\form#142:\[ y-y_1=(f(x_{n-1})-f(x_1))/(x_{n-1}-x_1)(x_n-x_1) \]
+\form#143:$y=0$
+\form#144:$y_1=f(x_1)$
+\form#145:$x_n$
+\form#146:\[x_n=x_1-(x_{n-1}-x_1)/(f(x_{n-1})-f(x_1))f(x_1)\]
+\form#147:$(x_{lo},x_{hi} )$
+\form#148:$p\cdot g < tol |p| |g|$
+\form#149:$p' = g' - \beta $
+\form#150:$\beta=-|g'|^2/|g|^2$
+\form#151:$\beta$
+\form#152:\[\beta = \frac{g'(g-g')}{g^2} \]
+\form#153:\[x_{i+1} = x_i - \frac{f(x_i)}{f'(x_i)}\]
+\form#154:\[x_1 = x_0 - \frac{f(x_0)}{f'(x_0)}\]
+\form#155:\[x_{i+1} = x_i - {f(x_i) \over f'_{est}} \mbox{where} f'_{est} = \frac{f(x_{i}) - f(x_{i-1})}{x_i - x_{i-1}} \]
+\form#156:$x_i$
+\form#157:$R_i=$
+\form#158:\[R_i = x_i - {(x_{i+1} - x_i)^2 \over (x_{i+2} - 2 x_{i+1} + x_i)}\]
+\form#159:\[f'(x) \approx \frac{f(x+h) - f(x)}{h}\]
+\form#160:$(-\infty,+\infty)$
+\form#161:$(a,+\infty)$
+\form#162:$ (3-\sqrt 5)/2 \approx 0.3819660 $
+\form#163:$f(a') > f(x') < f(b')$
+\form#164:$|x_m - x_m^*| < \hbox{\it precision\/}\, x_m^* $
+\form#165:$\frac{1}{2}x^T Q x + L^T x $
+\form#166:\[ \min_{x} \frac{1}{2}x^T Q x + L^T x \]
+\form#167:$E x = b $
+\form#168:$c <= N x <= d $
+\form#169:$e <= x <= f $
+\form#170:$Q$
+\form#171:$L$
+\form#172:$E$
+\form#173:$N$
+\form#174:$[T_{start}, T_{start} - \text{step}, T_{start} - 2\text{step}, T_{start}-3\text{step},..., T_{end} ]$
+\form#175:$[T_{start}, \frac{T_{start}}{\text{step}}, \frac{T_{start}}{\text{step}^2}, \frac{T_{start}}{\text{step}^3},..., T_{end} ]$
+\form#176:$p = e^{-(E_{new} - E)/(kT)}$
+\form#177:$ Y \sim \alpha X + \beta$
+\form#178:$ Y \sim \alpha X $
+\form#179:$ Y \sim \sum^{n}_{i=0} \alpha_{i} X^{i} $
+\form#180:$(c_0, c_1, ..., c_n)$
+\form#181:$Y = c_0 + \Sigma^{i=n}_{i=1}c_i x^i$
+\form#182:$ \sum_i w_i (y_i - \sum_j X_{ij} c_j)^2 = || y - Xc ||_W^2$
+\form#183:$x^i$
+\form#184:$(c_0)$
+\form#185:$Y = c_1 X$
+\form#186:$\sum^{n}_{i=1} (Y_i - (c_1 X ))^2 $
+\form#187:\[\sum_i \rho(e_i) = \sum_i \rho (y_i - Y(c, x_i))\]
+\form#188:$e_i = y_i - Y(c, x_i)$
+\form#189:$\rho(e_i)$
+\form#190:$\rho(e) \ge 0 $
+\form#191:$\rho(0) = 0$
+\form#192:$\rho(-e) = \rho(e)$
+\form#193:$\rho(e_1) > \rho(e_2) for |e_1| > |e_2|$
+\form#194:$\rho(e) = e^2$
+\form#195:$w(e)$
+\form#196:\[ w(e) = \left\{ \begin{array}{cc} (1 - e^2)^2, & |e| \le 1 \\ 0, & |e| > 1 \end{array}\right.\]
+\form#197:\[ w(e) = \frac{1}{1 + e^2}\]
+\form#198:\[w(e) = frac{1}{ 1 + |e|}\]
+\form#199:\[w(e) = 1 \]
+\form#200:\[w(e) = \exp{(-e^2)}\]
+\form#201:$(c_0, c_1)$
+\form#202:$Y = c_0 + c_1 X$
+\form#203:$\sum^{n}_{i=1} (Y_i - (c_1 X + c_0))^2 $
+\form#204:$\phi(x) = 1 $
+\form#205:$ x \in [0,1) $
+\form#206:$\phi(x) = 0$
+\form#207:\[\mu = {1 \over N} \sum x_i\]
+\form#208:$\mu$
+\form#209:\[{\sigma}^2 = {1 \over (N-1)} \sum (x_i - {\mu})^2\]
+\form#210:${\sigma}^2$
+\form#211:\[{\sigma}^2 = {1 \over (N)} \sum (x_i - mean)^2\]
+\form#212:\[{\sigma} = \sqrt{{1 \over (N-1)} \sum (x_i - {\mu})^2}\]
+\form#213:${\sigma}$
+\form#214:\[{\sigma} = \sqrt{{1 \over (N)} \sum (x_i - {\mu})^2}\]
+\form#215:\[absdev = {1 \over N} \sum |x_i - {\mu}|\]
+\form#216:\[absdev = {1 \over N} \sum |x_i - {mean}|\]
+\form#217:\[skew = {1 \over N} \sum {\left( x_i - {\mu} \over {\sigma} \right)}^3\]
+\form#218:\[kurtosis = \left( {1 \over N} \sum {\left(x_i - {\mu} \over {\sigma} \right)}^4 \right) - 3\]
+\form#219:\[r = {cov(x, y) \over \sigma_x \sigma_y} = {{1 \over n-1} \sum (x_i - x) (y_i - y) \over \sqrt{{1 \over n-1} \sum (x_i - { x})^2} \sqrt{{1 \over n-1} \sum (y_i - { y})^2}} \]
+\form#220:\[r_{s}=1-\frac{6 \sum d_i^2}{n(n^{2}-1)} \]
+\form#221:$ d_{i}= (X_{i})- (Y_{i})$
+\form#222:\[quantile = (1 - \delta) x_i + \delta x_{i+1} \]
+\form#223:$floor((n - 1)q)$
+\form#224:$\delta = (n-1)q - i$
+\form#225:\[dX_{t} = \mu dt + \sigma dW_{t}\]
+\form#226:$ \mu $
+\form#227:$ \sigma $
+\form#228:$ dW $
+\form#229:\[v_{t+dt} = v_{t} + \alpha (\theta + v_{t}) + \sigma \sqrt{v_{t}dt}dZ + \frac{1}{4} \sigma^{2} dt (dZ^2-1) \]
+\form#230:\[dX_{t} = \alpha (\theta - X_{t}) dt + \sigma \sqrt{X_{t}} dW_{t}\]
+\form#231:$ \alpha $
+\form#232:$ \theta $
+\form#233:\[\frac{dX_{t}}{X_{t}} = \mu dt + \sigma dW_{t}\]
+\form#234:\[dX_{t} = \mu X_{t} dt + \sqrt{Y_{t}} X_{t} dW^{X}_{t}\]
+\form#235:\[dY_{t} = \alpha (\theta - Y_{t}) dt + \sqrt{Y_{t}} \sigma dW^{Y}_{t}\]
+\form#236:\[\langle dW^{X}_{t}, dW^{Y}_{t}\rangle = \rho \]
+\form#237:$ \rho $
+\form#238:$ dW^{X},dW^{Y} $
+\form#239:$X$
+\form#240:\[ \begin{aligned} C & = i_{cp} (S \times DFq \times N(i_{cp} d_{1}) - K \times DFr \times N(i_{cp}d_{2})) \\ d_{1} & = \frac{ln(\frac{S\frac{DFq}{DFr}}{K}) + \frac{var}{2} t}{\sqrt{var}} \\ d_{2} & = \frac{ln(\frac{S\frac{DFq}{DFr}}{K}) - \frac{var}{2} t}{\sqrt{var}} \\ var & = vol^2 t \end{aligned}\]
+\form#241:$max(icp(S-K),0) $
+\form#242:\[ \begin{aligned} C & = i_{cp} \times S \times DFq \times N(i_{cp} d_{1}) \\ d_{1} & = \frac{ln(\frac{S\frac{DFq}{DFr}}{K}) + \frac{var}{2} t}{\sqrt{var}} \\ var & = vol^2 t \end{aligned}\]
+\form#243:\[ \frac{DFq}{DFr} \times spot * exp^{ N^{-1}( delta / DFq) \times vol \times sqrt(t) - 0.5 \times vol \times vol \times t}\]
+\form#244:$N^{-1}$
+\form#245:\[ \frac{DFq}{DFr} \times spot * exp^{-( N^{-1}( -delta / DFq) \times vol \times sqrt(t) - 0.5 \times vol \times vol \times t)}\]
+\form#246:$Delta = \frac{\partial PV}{\partial Spot} \approx \frac{PV(Spot+h) - PV(Spot)}{h}$
+\form#247:$Delta = \frac{\partial PV}{\partial Spot} \approx \frac{PV(Spot) - PV(Spot-h)}{h}$
+\form#248:$Delta = \frac{\partial PV}{\partial Spot} \approx \frac{PV(Spot+h) - PV(Spot-h)}{2h}$
+\form#249:$\Gamma = \frac{\partial^2 PV}{\partial Spot^2} \approx \frac{PV(Spot+2h) - 2PV(Spot+h) + PV(Spot)}{h^2}$
+\form#250:$\Gamma = \frac{\partial^2 PV}{\partial Spot^2} \approx \frac{PV(Spot) - 2PV(Spot-h) + PV(Spot-2h)}{h^2}$
+\form#251:$\Gamma = \frac{\partial^2 PV}{\partial Spot^2} \approx \frac{PV(Spot+h) - 2PV(Spot) + PV(Spot-h)}{h^2}$
+\form#252:$ Theta = PV(T+1Day) -PV(T)$
+\form#253:$Theta = PV(T+1) - PV(T)$
+\form#254:$Vanna = \frac{PV(Spot+h_s,Vol+h_v) - PV(Spot+h_s,Vol-h_v) - PV(Spot-hs,Vol+h_v) + PV(Spot-hs,Vol-hv)}{4h_sh_v}$
+\form#255:\[Vanna = \frac{\partial^2PV}{\partial Spot \partial Vol} \approx \frac{PV(Spot+h_s,Vol+h_v) - PV(Spot+h_s,Vol-h_v) - PV(Spot-hs,Vol+h_v) + PV(Spot-hs,Vol-hv)}{4h_sh_v}\]
+\form#256:$Vega = \frac{\partial PV}{\partial Vol} \approx \frac{PV(Vol+h) - PV(Vol)}{h}$
+\form#257:$Vega = \frac{\partial PV}{\partial Vol} \approx \frac{PV(Vol) - PV(Vol-h)}{h}$
+\form#258:$Vega = \frac{\partial PV}{\partial Vol} \approx \frac{PV(Vol+h) - PV(Vol-h)}{2h}$
+\form#259:$Volga = \frac{\partial^2 PV}{\partial Vol^2} \approx \frac{PV(Vol+2h) - 2PV(Vol+h) + PV(Vol)}{h^2}$
+\form#260:$Volga = \frac{\partial^2 PV}{\partial Vol^2} \approx \frac{PV(Vol) - 2PV(Vol-h) + PV(Vol-2h)}{h^2}$
+\form#261:$Volga = \frac{\partial^2 PV}{\partial Vol^2} \approx \frac{PV(Vol+h) - 2PV(Vol) + PV(Vol-h)}{h^2}$

@@ -1,0 +1,29 @@
+Future value of 1 CU calculated with simple rate compounding, interest rate = 0.05 accrual_period= 0.85 is 1.0425
+Interest rate calculated with simple rate compounding, future value = 1.025 accrual_period= 0.85 is 0.0294118
+
+Future value of 1 CU calculated with compounded rate compounding, interest rate = 0.05 accrual_period= 0.85 is 1.04234
+Interest rate calculated with compounded rate compounding, future value = 1.025 accrual_period= 0.85 is 0.0294762
+
+Future value of 1 CU calculated with exponential rate compounding, interest rate = 0.05 accrual_period= 0.85 is 1.04342
+Interest rate calculated with exponential rate compounding, future value = 1.025 accrual_period= 0.85 is 0.0290501
+
+
+
+Below calculation was performed for three different interest rate instances. Values of input data are as follows:
+starting date:		 2015-08-26
+middle date:		 2016-03-11
+end date:		 2016-12-15
+interest rate:		 0.05
+DF for middle date:	 0.95
+DF for end date:	 0.875
+
+Capitaliation is a future value of 1CU at end date invested at starting date. Discount factor is present value of 1CU receive at end date.
+Coupon is the yield on investement starting at start date and ending at end date.Zerocoupon is annualized yield rate of mention investment.
+Forward rate is a rate form middle date to end date if the present value of 1CU received on those dates is know.
+
+Simple interest rate:
+ capitalization= 1.06534 discount factor= 0.938665 coupon= 0.0653425 zerocoupon rate= 0.109314 forward rate= 0.112135
+Compounded interest rate:
+  capitalization= 1.06584 discount factor= 0.938229 coupon= 0.0658381 zerocoupon rate= 0.107581 forward rate= 0.113588
+Exponential interest rate:
+ capitalization= 1.06752 discount factor= 0.936747 coupon= 0.0675246 zerocoupon rate= 0.102178 forward rate= 0.107587

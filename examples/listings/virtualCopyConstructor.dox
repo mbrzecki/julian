@@ -1,0 +1,33 @@
+Smart pointers for Concrete Class 1 (Curiously recurring template pattern)
+
+Original deep copying smart pointer
+	ConcreteClass1: 0x6000003a0
+
+Assigned deep copying smart pointer
+	ConcreteClass1: 0x6000003c0
+
+Copied deep copying smart pointer
+	ConcreteClass1: 0x6000003e0
+
+Original shared smart pointer
+	ConcreteClass1: 0x600000410
+
+Assigned shared smart pointer
+	ConcreteClass1: 0x600000410
+
+Copied shared smart pointer
+	ConcreteClass1: 0x600000410
+
+
+
+Smart pointers for Concrete Class 2 (Virtual copy constructor implemented in base class)
+
+Original deep copying smart pointer
+	ConcreteClass2: 0x600000470
+
+Assigned deep copying smart pointer
+	ConcreteClass2: 0x600000490
+
+Copied deep copying smart pointer
+	ConcreteClass2: 0x60005e720
+

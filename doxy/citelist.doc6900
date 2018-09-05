@@ -1,0 +1,339 @@
+<!-- BEGIN CITATIONS -->
+<!--
+\citation{BlackScholesHoles}
+\citation{hagan1}
+\citation{ooqp}
+\citation{OGinterpolation}
+\citation{OGinterpolation}
+\citation{OGinter}
+\citation{OGinter}
+\citation{Hull}
+\citation{hull}
+\citation{hull}
+\citation{hull}
+\citation{fletcher}
+\citation{fletcher}
+\citation{london}
+\citation{headfirst}
+\citation{Iclark}
+\citation{Iclark}
+\citation{wystupsmile}
+\citation{intphys}
+\citation{intphys}
+\citation{intphys}
+\citation{intphys}
+\citation{intphys}
+\citation{intphys}
+\citation{intphys}
+\citation{BankOfCanadaSwapCurve}
+\citation{BankOfCanadaSwapCurve}
+\citation{rebonato}
+\citation{mathofder}
+\citation{stochcalculus}
+\citation{akima}
+\citation{physicsmontecarlo}
+\citation{MersenneTwist}
+\citation{gatheral}
+\citation{gatheral}
+\citation{bivariate}
+\citation{Sherer}
+\citation{Sherer}
+\citation{Sherer}
+\citation{Heston}
+\citation{tuckman}
+\citation{tuckman}
+\citation{tuckman}
+\citation{tuckman}
+\citation{tuckman}
+\citation{LEcuyer}
+\citation{wystupstructureprod}
+\citation{steffen}
+\citation{hastings}
+\citation{Fujii}
+\citation{BlackScholes}
+\citation{duffy1}
+\citation{duffy2}
+\citation{duffy3}
+\citation{duffy4}
+\citation{duffy4}
+\citation{duffy4}
+\citation{coolingschemes}
+\citation{derivativeInstruments}
+\citation{derivativeInstruments}
+\citation{NumRec}
+\citation{NumRec}
+\citation{NumRec}
+\citation{NumRec}
+\citation{NumRec}
+\citation{NumRec}
+\citation{NumRec}
+\citation{NumRec}
+\citation{NumRec}
+\citation{NumRec}
+\citation{NumRec}
+\citation{NumRec}
+\citation{NumRec}
+\citation{Tausworthe}
+\citation{LemBrosSwapCurve}
+\citation{LemBrosSwapCurve}
+\citation{LemBrosSwapCurve}
+\citation{Luscher}
+\citation{nelder}
+\citation{GoF}
+\citation{GoF}
+\citation{GoF}
+\citation{OGguide}
+\citation{OGguide}
+\citation{OGguide}
+\citation{OGguide}
+\citation{joshi}
+\citation{joshi}
+\citation{joshi}
+\citation{simAnneal1}
+-->
+<!-- END CITATIONS -->
+<!-- BEGIN BIBLIOGRAPHY -->
+<dl class="citelist">
+
+<!-- Authors: AKlein AGodunov -->
+<dt><a name="CITEREF_intphys">[1]</a></dt><dd>A.Klein A.Godunov.
+<em>Introductory computational physics</em>.
+Cambridge University Press, The Edinburgh Building, Cambridge CB2 1RP,
+  2006.</dd>
+
+<!-- Authors: H Akima -->
+<dt><a name="CITEREF_akima">[2]</a></dt><dd>H.&nbsp;Akima.
+A new method of interpolation and smooth curve fitting based on local
+  procedures.
+<em>Journal of the ACM</em>, 17(4):589&ndash;602, 1970.</dd>
+
+<!-- Authors: BEales MChoudhry -->
+<dt><a name="CITEREF_derivativeInstruments">[3]</a></dt><dd>M.Choudhry B.Eales.
+<em>Derivative Instruments A Guide to Theory and Practice</em>.
+Butterworth-Heinemann, Linacre House, Jordan Hill, Oxford OX2 8DP, 1st edition,
+  2003.</dd>
+
+<!-- Authors: WPress STeukolsky WVetterling BFlannery -->
+<dt><a name="CITEREF_NumRec">[4]</a></dt><dd>W.Press S.Teukolsky&nbsp;W.Vetterling B.Flannery.
+<em>Numerical Recipes in C. Tha art of scientific computing</em>.
+Cambridge University Press, The Pitt Building, Trumpington Street, Cambridge
+  CB2 1RP, 2nd edition, 1992.</dd>
+
+<!-- Authors: BTuckman -->
+<dt><a name="CITEREF_tuckman">[5]</a></dt><dd>B.Tuckman.
+<em>Fixed Income Securities Tools for Todays Markets</em>.
+John Wiley and Sons Ltd, West Sussex PO19 8SQ, England, 2nd edition, 2002.</dd>
+
+<!-- Authors: DJDuffy -->
+<dt><a name="CITEREF_duffy1">[6]</a></dt><dd>D.J.Duffy.
+<em>Financial Instrument Pricing Using C++</em>.
+John Wiley and Sons Ltd, West Sussex PO19 8SQ, England, 1st edition, 2004.</dd>
+
+<!-- Authors: DJDuffy -->
+<dt><a name="CITEREF_duffy2">[7]</a></dt><dd>D.J.Duffy.
+<em>Introduction to C++ for Financial Engineers</em>.
+John Wiley and Sons Ltd, West Sussex PO19 8SQ, England, 1st edition, 2006.</dd>
+
+<!-- Authors: DJDuffy JKienitz -->
+<dt><a name="CITEREF_duffy3">[8]</a></dt><dd>J.Kienitz D.J.Duffy.
+<em>Monte Carlo Frameworks. Building customisable high-performance C++
+  applications</em>.
+John Wiley and Sons Ltd, West Sussex PO19 8SQ, England, 1 edition, 2009.</dd>
+
+<!-- Authors: DJDuffy AGermani -->
+<dt><a name="CITEREF_duffy4">[9]</a></dt><dd>A.Germani D.J.Duffy.
+<em>C sharp for financial markets</em>.
+John Wiley and Sons Ltd, West Sussex PO19 8SQ, England, 1 edition, 2013.</dd>
+
+<!-- Authors: DLandauKBinder -->
+<dt><a name="CITEREF_physicsmontecarlo">[10]</a></dt><dd>K.Binder D.Landau.
+<em>A Guide to Monte Carlo Simulations in Statistical Physics</em>.
+Cambridge University Press, 2nd edition, 2000.</dd>
+
+<!-- Authors: DReiswichUWystup -->
+<dt><a name="CITEREF_wystupsmile">[11]</a></dt><dd>U.Wystup D.Reiswich.
+Fx volatility smile construction.
+<em>CPQF Working Papar Series</em>, 20, 2009.</dd>
+
+<!-- Authors: EFreeman -->
+<dt><a name="CITEREF_headfirst">[12]</a></dt><dd>E.Freeman.
+<em>Head First Design Patterns</em>.
+O'reilly, Gravenstein Hughwat North, Sebastopol, CA95472, 1 edition, 2004.</dd>
+
+<!-- Authors: FBlackMScholes -->
+<dt><a name="CITEREF_BlackScholes">[13]</a></dt><dd>M.Scholes F.Black.
+The pricing of options and corporate liabilities.
+<em>Journal of Political Economy</em>, 1973.</dd>
+
+<!-- Authors: FBlack -->
+<dt><a name="CITEREF_BlackScholesHoles">[14]</a></dt><dd>F.Black.
+How to use the holes in black-scholes.
+<em>Journal of Applied Corporate Finance</em>, 1989.</dd>
+
+<!-- Authors: FZhou -->
+<dt><a name="CITEREF_LemBrosSwapCurve">[15]</a></dt><dd>F.Zhou.
+<em>The swap curve</em>.
+Lehman Brothers. Fixed-Income Research, 2002.</dd>
+
+<!-- Authors: PSHagan GWest -->
+<dt><a name="CITEREF_hagan1">[16]</a></dt><dd>P.S.Hagan
+  G.West.
+The interpolation methods for curve construction.
+<em>Applied Mathematical Finance</em>, 13(2):89&ndash;123, June 2006.</dd>
+
+<!-- Authors: IJClark -->
+<dt><a name="CITEREF_Iclark">[17]</a></dt><dd>I.J.Clark.
+<em>Foreign Exchange Option Pricing, A Practitioner's Guide</em>.
+John Wiley and Sons Ltd, West Sussex PO19 8SQ, England, 1st edition, 2011.</dd>
+
+<!-- Authors: JANelderRMead -->
+<dt><a name="CITEREF_nelder">[18]</a></dt><dd>R.Mead J.A.Nelder.
+A simplex method for function minimization.
+<em>Computer Journal</em>, 7:308&ndash;313, 1965.</dd>
+
+<!-- Authors: JCHull -->
+<dt><a name="CITEREF_Hull">[19]</a></dt><dd>J.C.Hull.
+<em>Options, futures and other derivatives</em>.
+Prentice Hall, Prentice Hall, Upper Saddle River, New Jersey 07458, 4th
+  edition, 2000.</dd>
+
+<!-- Authors: JGatheral -->
+<dt><a name="CITEREF_gatheral">[20]</a></dt><dd>J.Gatheral.
+<em>The volatility surface</em>.
+John Wiley and Sons Ltd, West Sussex PO19 8SQ, England, 2006.</dd>
+
+<!-- Authors: JLondon -->
+<dt><a name="CITEREF_london">[21]</a></dt><dd>J.London.
+<em>Modelling Derivatives in C++</em>.
+John Wiley and Sons Ltd, West Sussex PO19 8SQ, England, 1st edition, 2005.</dd>
+
+<!-- Authors: EGamma RHelm RJohnson JVlissides -->
+<dt><a name="CITEREF_GoF">[22]</a></dt><dd>E.Gamma
+  R.Helm&nbsp;R.Johnson J.Vlissides.
+<em>Design Patterns: Elements of Reusable Object-Oriented Software</em>.
+Addison-Wesley, 1st edition, 1994.</dd>
+
+<!-- Authors: P LEcuyer -->
+<dt><a name="CITEREF_LEcuyer">[23]</a></dt><dd>P.&nbsp;L'Ecuyer.
+Tables of maximally equidistributed combined lfsr generators.
+<em>Mathematics and Computation</em>, 68:261&ndash;269, 1999.</dd>
+
+<!-- Authors: MFujiiYShimadaATakahashi -->
+<dt><a name="CITEREF_Fujii">[24]</a></dt><dd>A.Takahashi M.Fujii, Y.Shimada.
+A note on construction of multiple swap curves with and without collateral.
+<em>CARF Working Paper Series No. CARF-F-154</em>, 2010.</dd>
+
+<!-- Authors: MGertz S Wright -->
+<dt><a name="CITEREF_ooqp">[25]</a></dt><dd>S.&nbsp;Wright
+  M.Gertz.
+<em>Object-Oriented Software for Quadratic Programming</em>.
+University of Wisconsin-Madison.</dd>
+
+<!-- Authors: MJoshi -->
+<dt><a name="CITEREF_joshi">[26]</a></dt><dd>M.Joshi.
+<em>C++ Design Patterns and Derivative Pricing</em>.
+Cambridge University Press, 2nd edition, 2008.</dd>
+
+<!-- Authors: MLuscher -->
+<dt><a name="CITEREF_Luscher">[27]</a></dt><dd>M.Luscher.
+A portable high-quality random number generator for lattice field theory
+  simulations.
+<em>Computer Physics Communications</em>, 79, 1994.</dd>
+
+<!-- Authors: MMatsumoto TNishimura -->
+<dt><a name="CITEREF_MersenneTwist">[28]</a></dt><dd>T.Nishimura M.Matsumoto.
+Mersenne twister: A 623-dimensionally equidistributed uniform pseudorandom
+  number generator.
+<em>ACM Transactions on Modeling and Computer Simulation</em>, 8:3&ndash;30,
+  1998.</dd>
+
+<!-- Authors: OpenGamma Quantitative Research -->
+<dt><a name="CITEREF_OGguide">[29]</a></dt><dd>OpenGamma Quantitative
+  Research, OpenGamma 185 Park Street London UK.
+<em>Interest rate instruments and market conventions guide</em>, 2012.</dd>
+
+<!-- Authors: OpenGamma Quantitative Research -->
+<dt><a name="CITEREF_OGinterpolation">[30]</a></dt><dd>OpenGamma
+  Quantitative Research, OpenGamma 185 Park Street London UK.
+<em>Piecewise Polynomial Interpolations</em>, 2013.</dd>
+
+<!-- Authors: PhSherer -->
+<dt><a name="CITEREF_Sherer">[31]</a></dt><dd>Ph.Sherer.
+<em>Computational Physics - Simulation of Classical and Quantum Systems</em>.
+Springer, 2010.</dd>
+
+<!-- Authors: RFletcher -->
+<dt><a name="CITEREF_fletcher">[32]</a></dt><dd>R.Fletcher.
+<em>Practical Methods of Optimization</em>.
+John Wiley and Sons Ltd, 2 edition, 1981.</dd>
+
+<!-- Authors: RNavin -->
+<dt><a name="CITEREF_mathofder">[33]</a></dt><dd>R.Navin.
+<em>The mathematics of derivatives</em>.
+John Wiley and Sons Ltd, West Sussex PO19 8SQ, England, 2007.</dd>
+
+<!-- Authors: RRebonato -->
+<dt><a name="CITEREF_rebonato">[34]</a></dt><dd>R.Rebonato.
+<em>Volatility and Correlation</em>.
+John Wiley and Sons Ltd, West Sussex PO19 8SQ, England, 2004.</dd>
+
+<!-- Authors: SHeston -->
+<dt><a name="CITEREF_Heston">[35]</a></dt><dd>S.Heston.
+A closed-form solution for options with stochastic volatility with applications
+  to bond and currency options.
+<em>The Review of Financial Studies</em>, 1993.</dd>
+
+<!-- Authors: SKirkpatrickCDGelattMPVecchi -->
+<dt><a name="CITEREF_simAnneal1">[36]</a></dt><dd>M.P.Vecchi S.Kirkpatrick, C.D.Gelatt.
+Optimization by simulated annealing.
+<em>Science</em>, 220, 1983.</dd>
+
+<!-- Authors: M Steffen -->
+<dt><a name="CITEREF_steffen">[37]</a></dt><dd>M.&nbsp;Steffen.
+A simple method for monotonic interpolation in one dimension.
+<em>Astronomy and Astrophysics</em>, 239(NOV(II)):p.443, 1990.</dd>
+
+<!-- Authors: RC Tausworthe -->
+<dt><a name="CITEREF_Tausworthe">[38]</a></dt><dd>R.C. Tausworthe.
+Random numbers generated by linear recurrence modulo two.
+<em>Mathematics and Computation</em>, 19:201&ndash;209, 1965.</dd>
+
+<!-- Authors: URon -->
+<dt><a name="CITEREF_BankOfCanadaSwapCurve">[39]</a></dt><dd>U.Ron.
+<em>A Practical Guide to Swap Curve Construction</em>.
+Bank of Canada Working Paper, Ottawa, Ontario, Canada K1A 0G9, 2000.</dd>
+
+<!-- Authors: UWystup -->
+<dt><a name="CITEREF_wystupstructureprod">[40]</a></dt><dd>U.Wystup.
+<em>Fx Options and Structured Products</em>.
+John Wiley and Sons Ltd, 2006.</dd>
+
+<!-- Authors: VCapassoDBakstein -->
+<dt><a name="CITEREF_stochcalculus">[41]</a></dt><dd>D.Bakstein V.Capasso.
+<em>An Introduction to Continuous-Time Stochastic Processes</em>.
+Birkhauser Boston, 2012.</dd>
+
+<!-- Authors: WKHastings -->
+<dt><a name="CITEREF_hastings">[42]</a></dt><dd>W.K.Hastings.
+Monte carlo sampling methods using markov chains and their applications.
+<em>Biometrika</em>, 57, 1970.</dd>
+
+<!-- Authors: YIwashita -->
+<dt><a name="CITEREF_OGinter">[43]</a></dt><dd>Y.Iwashita.
+<em>Piecewise polynomial interpolations</em>.
+OpenGamma Quantitative Research, OpenGamma 185 Park Street London UK,
+  2014.</dd>
+
+<!-- Authors: YNouraniBAndresen -->
+<dt><a name="CITEREF_coolingschemes">[44]</a></dt><dd>B.Andresen Y.Nourani.
+A comparison of simulated annealing cooling strategies.
+<em>Journal of Physics A</em>, 31, 1998.</dd>
+
+<!-- Authors: Z Drezner G Wesolowsky -->
+<dt><a name="CITEREF_bivariate">[45]</a></dt><dd>G.&nbsp;Wesolowsky Z.&nbsp;Drezner.
+On the computation of the bivariate normal integral.
+<em>Journal of Statistical Computation and Simulation</em>, 35, 1990.</dd>
+
+</dl>
+
+<!-- END BIBLIOGRAPHY -->

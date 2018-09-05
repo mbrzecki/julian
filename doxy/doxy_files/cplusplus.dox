@@ -1,0 +1,70 @@
+
+/*!
+    \page cpp C++
+
+   \cite duffy3 \cite london  \cite bjarnecpp11
+
+   \section despat Design patterns
+
+   see \subpage cpp_dp
+
+   \section cpp_comp Compiler
+
+    We use g++ from GNU Compiler Collection version 4.9.x. We compile our code with following flags:<br> 
+    std=c++17 - to obtain the compliance wiht C++11 standard <br>
+    pedantic <br>
+    Wall <br>
+    Wextra <br>
+    03 <br>
+	
+    \section cpp_library Libraries used in project
+
+    see \subpage cpp_lib
+
+    \section coding_guide Coding Guidelines
+    
+    see \subpage cod_gui
+
+ */
+
+/*!
+    \page cod_gui Coding Guidelines
+    
+
+    1. General
+    ==========
+
+    Any violation to the guide is allowed if it enhances readability.
+
+    2. Files
+    ========
+    
+    C++ header files should have extension *.hpp. Source files must have the extension  *.cpp.
+
+    A class should be declared in a header file and defined in a source file where the name of the files should match the name of the class.
+
+    Header files must contain an include guard in a form JULIAN_(FILENAME)_HPP.
+
+    Include statements must be located at the top of a file only.
+
+    3. Classes, structures and enumerations
+    =======================================
+
+    Names representing types must be in upper case notation (e.g. InterestRate, VolatilitySurface). Prefer to capitalize acronyms as single words (e.g. GslFunctionWrapper).
+
+    Name of class members should be named as ordinary variables, but with a trailing underscore.
+
+    Names representing methods should be verbs. Names of the methods must be written in lower case notation.
+
+    Use structures only for passive objects that carry data; everything else is a class.
+
+    Enumeration types should be named in upper-case notation. Individual enumerations should be named all upper-case.
+
+    4. Variables
+    =====================
+
+     Variable names must be in underscore notation (e.g. discounting_curve, pln_calendar etc.)
+
+     Variables with a large scope should have long names, variables with a small scope can have short names.	       
+
+*/

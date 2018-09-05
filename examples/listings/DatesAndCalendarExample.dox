@@ -1,0 +1,15 @@
+
+Name: calendar
+Object: Calendar
+Convention: Following
+SpotLag: 1
+Holidays: GoodFriday EasterMonday CorpusChristi 1stMay 
+Settlemet: SettlementFromSpot 
+EndOfMonth: No
+
+
+This is an example calculation of year fraction between dates: 2015-05-25 and 2015-09-12 according to ACT360 convention.         YF= 0.305556
+This is an example calculation of year fraction between dates: 2015-05-25 and 2015-09-12 according to ACT360 add one convention. YF= 0.308333
+This is an example calculation of year fraction between dates: 2015-05-25 and 2015-09-12 according to ACTACT ISDA convention.    YF= 0.30137
+This is an example calculation of year fraction between dates: 2015-05-25 and 2015-09-12 according to ACT365 convention.         YF= 0.30137
+This is an example calculation of year fraction between dates: 2015-05-25 and 2015-09-12 according to 1/1 convention.            YF= 1

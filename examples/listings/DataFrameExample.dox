@@ -1,0 +1,73 @@
+Print data frame
+------------------------------------------------------
+    Age             City     Id      Name     Birthday
+------------------------------------------------------
+     50            Shire   id01     Frodo            .
+     35            Shire   id02   Samwise   1968-09-22
+     40           Gondor   id03   Boromir            .
+   2931   Woodland Realm   id04   Legolas            .
+    139   Blue Mountains   id05     Gimli            .
+------------------------------------------------------
+
+Print first three rows
+------------------------------------------------------
+    Age             City     Id      Name     Birthday
+------------------------------------------------------
+     50            Shire   id01     Frodo            .
+     35            Shire   id02   Samwise   1968-09-22
+     40           Gondor   id03   Boromir            .
+   2931   Woodland Realm   id04   Legolas            .
+------------------------------------------------------
+
+Print data frame using << operator
+Object: DataFrame
+Size: 5 col 5 rows
+------------------------------------------------------
+    Age             City     Id      Name     Birthday
+------------------------------------------------------
+     50            Shire   id01     Frodo            .
+     35            Shire   id02   Samwise   1968-09-22
+     40           Gondor   id03   Boromir            .
+   2931   Woodland Realm   id04   Legolas            .
+    139   Blue Mountains   id05     Gimli            .
+------------------------------------------------------
+
+Filtered data (age < 50)
+---------------------------------------------
+   Age     City     Id      Name     Birthday
+---------------------------------------------
+    35    Shire   id02   Samwise   1968-09-22
+    40   Gondor   id03   Boromir            .
+---------------------------------------------
+
+Merged dataframes
+----------------------------------------------------------------
+    Age             City     Id       Name     Birthday   Weapon
+----------------------------------------------------------------
+     50            Shire   id01      Frodo            .        .
+     35            Shire   id02    Samwise   1968-09-22        .
+     40           Gondor   id03    Boromir            .        .
+   2931   Woodland Realm   id04    Legolas            .        .
+    139   Blue Mountains   id05      Gimli            .        .
+     87           Gondor   id06    Aragorn            .    sword
+     34            Shire   id07   Meriadoc            .    sling
+----------------------------------------------------------------
+
+Reading using number of row and number of col Frodo
+Reading using number of row and name of col   Frodo
+Reading using id of row and name of col       Frodo
+
+Read date 1968-09-22
+Read row as map
+
+     Age 35
+Birthday 1968-09-22
+    City Shire
+      Id id02
+    Name Samwise
+  Weapon .
+
+Aragorn's weapon is
+sword
+Meriadoc's weapon is
+Sling

@@ -1,0 +1,124 @@
+/*!
+    \page cpp_dp Design patterns 
+    
+    We understand the design patterns as method of producing well-design, structured, clean and reusable code. In this section we present examples of all design patterns used in this library. 
+	The aim of this presentation is to define the common dictionary of design patterns that will help to understand and use this library by people that did not take part in development process. 
+    While developing this library, authors were mostly inspired by Joshi's book \cite joshi and classic Gang of Four \cite GoF . 
+	We consider the Head First handbook \cite headfirst as best introduction to design pattern (despite the fact that the examples are written in Java). 
+	Also Duffy's books (\cite duffy1 and \cite duffy2 ) contain short introduction to design patterns used in financial engineering.
+
+
+    1. Virtual Copy Constructor, CRTP and Deep Copy
+    -------------------------------------------------------------------------------
+    Virtual Copy Constructor is used to create a copy of an object  without knowing its concrete type. It is needed when we want to use deep-copying smart pointer.
+    Virtual copy constructor is usually implemented as clone method to which creation of object's copy is delegated. To avoid having to implement clone method in each derived class,
+    one can use the Curiously Recurring Template Pattern idiom.
+
+    \subpage cpp_dp_deepcopy 
+ 
+	
+    2. Factory
+    ----------
+    GoF description:Define an interface for creating an object, but let subclasses decide which class to instantiate. Factory lets a class defer instantiation to subclasses.
+    
+    \subpage cpp_dp_factory 
+
+    3. Builder
+    ----------
+	GoF description: Separate the construction of a complex object from its representation so that the same construction process can create different representations. 
+	
+    \subpage cpp_dp_abstract_builder
+
+    4. Decorator
+    ------------
+    GoF description: Attach additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality. 
+
+    \subpage cpp_dp_decorator
+
+    5. Strategy
+    -----------
+    
+    GoF description: Define a family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
+
+    \subpage cpp_dp_strategy
+
+    6. Visitor
+    ---------
+	Visitor is used to emulate double dispatch. Double dispatch is a special form of multiple dispatch, and a mechanism that dispatches a function call to different concrete functions depending on the runtime types of two objects involved in the call.
+		
+    \subpage cpp_dp_visitor 
+
+
+    7. Bridge
+    ------------
+	GoF description: Decouple an abstraction from its implementation so that the two can vary independently. 
+	
+    \subpage cpp_dp_bridge
+
+
+*/
+
+/*! \page cpp_dp_deepcopy  Virtual Copy Constructor, CRTP and Deep Copy
+
+    \include VirtualCopyConstructor.cpp
+    \b Output
+    @verbinclude VirtualCopyConstructor.dox 
+*/
+
+/*! \page cpp_dp_decorator Decorator
+
+    \include Decorator.cpp
+    \b Output
+    @verbinclude Decorator.dox	
+*/
+
+
+/*!
+	\page cpp_dp_abstract_builder Builder
+
+	\include builder.cpp
+	\b Output
+	@verbinclude builder.dox
+*/
+
+/*!
+	\page cpp_dp_factory Factory
+
+	For more information see \cite joshi.
+
+	\include Factory.cpp
+	\b Output
+	@verbinclude Factory.dox
+*/
+
+
+/*!
+	\page cpp_dp_strategy Strategy
+
+    \include Strategy.cpp
+		\b Output
+	@verbinclude Strategy.dox	
+*/
+
+/*!
+	\page cpp_dp_visitor Visitor
+
+	The main idea of visitor is to use two kinds of polymorphism: static (function overloading) and dynamic (virtual functions), at the same time. 
+	This allows to call a concrete functions depending on the runtime types of two objects involved in the call.
+	
+    \include Visitor.cpp
+	\b Output
+	@verbinclude Visitor.dox
+	
+*/
+
+/*!
+	\page cpp_dp_bridge  Bridge 
+
+    	\include bridge.cpp
+	
+	\b Output
+	
+	@verbinclude bridge.dox
+	
+*/

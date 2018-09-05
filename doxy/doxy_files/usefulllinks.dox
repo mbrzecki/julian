@@ -1,0 +1,111 @@
+
+/*!
+    \page link Useful links
+
+    Finance
+    =======
+
+    <a href = "http://www.investopedia.com">  Investopedia - Educating the world about finance</a> 
+
+    <a href = "http://wiki.treasurers.org/wiki/Main_Page">  The Treasurer's wiki - leading treasury professionals</a> 
+   
+    <a href = "http://www.wilmott.com/index.cfm?NoCookies=Yes&forumid=1">  Wilmott - serving the quantitative finance community (forums page)  </a> 
+
+    <a href = "http://quantlib.org/index.shtml">  QuantLib - A free/open-source library for quantitative finance</a>
+
+    <a href = "http://www.quarchome.org/">  QUARC - Quantitative Research Centre</a>
+
+    <a href = "http://www.opengamma.com/research">  OpenGamma's Quantitative Research</a>
+
+    <a href = "http://defaultrisk.com/">  Default Risk - the web's biggest credit risk modelling resource</a>
+
+    <a href = "https://www.elitetrader.com/et/">  Elite Trader - group of financial traders that help each other work</a>
+
+    Market Data
+    ===========
+
+    <a href = "https://fred.stlouisfed.org/categories/22">  FED Reaserch Economic Data - IRs</a>
+
+    <a href = "https://fred.stlouisfed.org/categories/15">  FED Reaserch Economic Data - FX</a>
+
+    <a href = "https://fred.stlouisfed.org/categories/46">  FED Reaserch Economic Data - Stocks and Bonds</a>
+    
+    <a href = "https://fred.stlouisfed.org/categories/32217">  FED Reaserch Economic Data - Commodities</a>
+
+   <a href = "https://sebgroup.com/large-corporates-and-institutions/prospectuses-and-downloads/rates/swap-rates">  SEB Live swap rates</a>
+
+   <a href = "https://sentryderivatives.com/lp/">  Sentry Derivatives - Fx Options Live</a>
+
+   <a href = "http://bossa.pl/notowania/">  Bossa</a>
+
+   <a href = "https://stooq.com/">  Stooq</a>
+
+
+
+   C++, programming and more
+   =========================
+
+    <a href = "https://isocpp.org/">  Standard C++ Foundation</a>  
+
+
+    <a href = "https://www.cygwin.com">  Cygwin project homepage</a>  
+
+
+    <a href="http://pages.cs.wisc.edu/~swright/ooqp/">  OOQP - Object-Oriented software for Quadratic Programming</a>
+    
+    <a href="http://www.gnu.org/software/gsl/manual/html_node/index.html">  GNU Scientific Library - a collection of numerical routines for scientific computing</a>
+    
+    <a href="http://www.boost.org">  Boost - free peer-reviewed portable C++ source libraries</a>
+    
+    <a href="http://www.stack.nl/~dimitri/doxygen/">  Doxygen - Generate documentation from source code</a>
+
+    <a href="http://stackoverflow.com/search?q=cpp">  StackOverflow - C++ questions</a>
+
+    <a href="https://sourcemaking.com/">  Source Making</a>
+
+    <a href="http://osworld.pl/kompilacja-w-gcc-krok-po-kroku/">  Kompilacja w GCC krok po kroku</a>
+
+    <a href="https://www3.ntu.edu.sg/home/ehchua/programming/cpp/gcc_make.html">  GCC and Make Compiling, Linking and Building C/C++ Applications</a>
+
+    Mathematics
+    ===========
+
+    <a href="http://mathworld.wolfram.com/">  Wolfram MathWorld - the web's most extensive mathematics resource</a>
+
+    <a href="http://stats.stackexchange.com/">  Cross Validation - Q&A site: statistics, machine learning, data analysis</a>
+
+    People
+    ======
+
+    <a href="http://www.emanuelderman.com/">  Emanuel Derman's blog</a>
+
+    <a href="http://www-2.rotman.utoronto.ca/~hull/">  John C. Hull's homepage</a>
+
+    <a href="http://www.markjoshi.com/">  Mark Joshi's homepage (RIP [*])</a>
+
+    <a href="http://www.stroustrup.com/">  Bjarne Stroustrup's homepage</a>
+	
+    <a href="http://www.aristeia.com/">  Scott Meyers Website</a>
+    
+    Misc
+    ====
+
+    <a href="https://www.youtube.com/watch?v=86xWVb4XIyE&t=760s">  Bjarne Stroustrup - The Essence of C++</a>
+
+    <a href="https://www.youtube.com/watch?v=aPvbxuOBQ70">  Bjarne Stroustrup - C++ Today</a>
+    
+    <a href="https://www.youtube.com/watch?v=ltCgzYcpFUI">  Scott Meyers - Why C++ Sails When the Vasa Sank</a>
+
+    <a href="https://www.youtube.com/watch?v=BezbcQIuCsY">  Scott Meyers - An Effective C++11/14 Sampler</a>
+
+    <a href="https://www.youtube.com/watch?v=HTUE03LnaXA">  Emacs as a C/C++ Editor/IDE (Part I)</a>
+
+    <a href="https://www.youtube.com/watch?v=r_HW0EB67eY">  Emacs as a C/C++ Editor/IDE (Part II)</a>
+
+    <a href="https://www.youtube.com/watch?v=Ib914gNr0ys">  Emacs as a C/C++ Editor/IDE (Part III)</a>
+
+    <a href="https://www.youtube.com/watch?v=NjTCjqSZOAU">  Emacs as a C/C++ Editor/IDE (Part IV)</a>
+
+    
+ */
+

@@ -1,0 +1,41 @@
+
+/** \mainpage jUnified Library Integrating Analytical and Numerical Techiniques
+
+	@image html logo.jpg
+	
+    \section intro Introduction
+
+    The project was used just for training purpose. Because you cannot be a good validation specialist when you do not develop models for your own.  
+    It was also a laboratory of testing new design solutions.
+    
+    \section dependent Dependencies
+    
+    For dependencies of library see \subpage cpp_lib
+
+    \section documentation Documentation
+
+    Documentation was prepared using <a href = "http://www.doxygen.nl">  Doxygen v1.8.11</a> and applying css <a href = "https://www.bootstrapcdn.com">  Bootstrap </a> theme. 
+
+    \section author Authors
+
+    Maciej Brzecki
+   
+    \section julian Why Julian
+
+    While I was working in mBank I had to take a business trips to Lodz. Usually, while I was sitting on the <a href = "https://www.youtube.com/watch?v=NLT_Yx5yhGo"> train</a> to Lodz named \a TLK \a Tuwim
+    I was working on this library. This is why I called the library jULIAN in memory of great polish poet <a href = "https://en.wikipedia.org/wiki/Julian_Tuwim">  Julian Tuwim</a>  	
+
+    Also, one poem of Tuwim perfectly describes the present situation in financial engineering.
+    	  
+    <i>W naturze nie ma linii prostej,<br>
+    Ludzki to wymysł sztuczny.<br>
+    Patrząc w skłębione żyworosty,<br>
+    Chaosu, chaosu się uczmy.<br>
+    Pogięty, kręty i strzępiasty<br>
+    Jest każdy stwór w naturze,<br>
+    A prostą linią łączą gwiazdy<br>
+    Głupcy i tchórze.<br></i>
+    J. Tuwim, 1955 
+
+*/
+

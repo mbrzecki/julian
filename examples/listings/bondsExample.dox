@@ -1,0 +1,60 @@
+Printing fixed income bond
+
+Name: fixed_bond
+Object: FixedIncomeBond
+StartDate: 2018-05-31
+Maturity: 2022-06-06
+CouponFrequency: Semiannually
+Notional:  1'000.00
+Coupon: 5.0000% (ACT365_Simple)
+
+Valuation of fixed income bond
+
+2018-06-04         -1'000.00       0.9995071         -999.51
+2018-12-04             25.07       0.9774648           24.50
+2019-06-04             24.93       0.9564864           23.85
+2019-12-04             25.07       0.9362816           23.47
+2020-06-04             25.07       0.9169126           22.99
+2020-12-04             25.07       0.8983289           22.52
+2021-06-04             24.93       0.8805790           21.95
+2021-12-06             25.34       0.8632413           21.88
+2022-06-06          1'024.93       0.8468383          867.95
+
+Price  29.60
+
+Printing floating rate bond
+
+Name: floating_bond
+Object: FloatingRateBond
+StartDate: 2018-05-31
+Maturity: 2022-06-06
+CouponFrequency: Semiannually
+Notional:  1'000.00
+Margin 1.0000% (ACT365_Simple)
+
+Valuation of floating rate bond
+
+2018-06-04         -1'000.00       0.9995071         -999.51
+2019-06-04             37.42       0.9564864           35.80
+2019-12-04             37.58       0.9362816           35.18
+2020-06-04             37.58       0.9169126           34.45
+2020-12-04             37.58       0.8983289           33.76
+2021-06-04             37.42       0.8805790           32.96
+2021-12-06             37.88       0.8632413           32.70
+2022-06-06          1'037.42       0.8468383          878.53
+
+Price  83.86
+
+Printing zero-coupon bond
+
+Name: zcbond
+Object: ZeroCouponBond
+StartDate: 2018-05-31
+Maturity: 2024-05-31
+Notional:  100'000.00
+
+Valuation of zero-coupon bond
+
+2024-05-31        100'000.00       0.7872487       78'724.87
+
+Price  78'724.87

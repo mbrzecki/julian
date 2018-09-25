@@ -1,5 +1,2 @@
-C:/Unix/home/OEM/jULIAN/src/marketModels/marketModel.hpp:86: warning: unable to resolve reference to `cpp_dp_deep_copy' for \ref command
-C:/Unix/home/OEM/jULIAN/src/pricingEngines/pricingEngine.hpp:37: warning: unable to resolve reference to `cpp_dp_deep_copy' for \ref command
-C:/Unix/home/OEM/jULIAN/src/mathematics/regressions/regression.hpp:55: warning: unable to resolve reference to `cpp_dp_deep_copy' for \ref command
 C:/Unix/home/OEM/jULIAN/src/marketData/interestRateCurves/estimators/unconstrainedSmoother.hpp:25: warning: Member UnconstrainedSmoother(SmartPointer< SmootherCostFunction > cost_function, double lambda) (function) of class julian::ir::UnconstrainedSmoother is not documented.
 C:/Unix/home/OEM/jULIAN/src/marketData/interestRateCurves/estimators/unconstrainedSmoother.hpp:44: warning: Member lambda_ (variable) of class julian::ir::UnconstrainedSmoother is not documented.

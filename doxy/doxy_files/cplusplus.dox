@@ -2,7 +2,9 @@
 /*!
     \page cpp C++
 
-   \cite duffy3 \cite london  \cite bjarnecpp11
+   The C++ was chosen as the coding language as it is a standard of quantitative finance (see \cite duffy3 \cite london \cite capinski) It is also robust, fast, with large numbers of open source projects providing efficient numerical routines.
+   
+     \cite bjarnecpp11
 
    \section despat Design patterns
 
@@ -10,12 +12,10 @@
 
    \section cpp_comp Compiler
 
-    We use g++ from GNU Compiler Collection version 4.9.x. We compile our code with following flags:<br> 
-    std=c++17 - to obtain the compliance wiht C++11 standard <br>
-    pedantic <br>
-    Wall <br>
-    Wextra <br>
-    03 <br>
+    We use g++ from GNU Compiler Collection version 6.4. We compile our code with following flags:<br> 
+    * \b std=c++17 \b pedantic to ensure the compliance with other compilers,
+    * \b Wall and \b  Wextra simply because it is a good practice;
+    * \b 03 No issues with optimization found.
 	
     \section cpp_library Libraries used in project
 

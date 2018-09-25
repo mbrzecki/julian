@@ -183,10 +183,10 @@ for temperature in cooling_schedule:
            E = E_new
         
    iter++
-</pre><p>Cooling schedule is a series of decreasing real numbers. The <em>temperature</em> influences the acceptance probability. For more details see <a class="el" href="a00583.html#CITEREF_coolingschemes">[45]</a></p>
+</pre><p>Cooling schedule is a series of decreasing real numbers. The <em>temperature</em> influences the acceptance probability. For more details see <a class="el" href="a00583.html#CITEREF_coolingschemes">[46]</a></p>
 <p>The neighbour is picked from distribution provided by user. The distribution expected value should be equal to zero. Usually it is a normal or uniform distribution.</p>
-<p>Acceptance probability is the probability of moving to a new state. If new steps is a step of lower energy the probability of taking the step is 1.0. In other case the probability is calculated using the acceptance probability function and compared to randomly picked number from standard uniform distribution. It means that algorithm can choose the non-optimal state, what makes the algorithm immune to local minimums. Larger increases in energy of the system should be less probably. The probability of such steps should decrease with temperature of the system. Kirkpatrick et al. choose the Boltzmann distribution: <img class="formulaInl" alt="$p = e^{-(E_{new} - E)/(kT)}$" src="form_176.png"/> , justified by analogy with the transitions of a physical systems. It also corresponds to the Metropolis–Hastings algorithm (see <a class="el" href="a00583.html#CITEREF_hastings">[43]</a>). The implemented algorithm enables usage of any acceptance probability.</p>
-<p>For more details see also: <a class="el" href="a00583.html#CITEREF_physicsmontecarlo">[11]</a> <a class="el" href="a00583.html#CITEREF_Sherer">[32]</a> <a class="el" href="a00583.html#CITEREF_simAnneal1">[37]</a> </p>
+<p>Acceptance probability is the probability of moving to a new state. If new steps is a step of lower energy the probability of taking the step is 1.0. In other case the probability is calculated using the acceptance probability function and compared to randomly picked number from standard uniform distribution. It means that algorithm can choose the non-optimal state, what makes the algorithm immune to local minimums. Larger increases in energy of the system should be less probably. The probability of such steps should decrease with temperature of the system. Kirkpatrick et al. choose the Boltzmann distribution: <img class="formulaInl" alt="$p = e^{-(E_{new} - E)/(kT)}$" src="form_176.png"/> , justified by analogy with the transitions of a physical systems. It also corresponds to the Metropolis–Hastings algorithm (see <a class="el" href="a00583.html#CITEREF_hastings">[44]</a>). The implemented algorithm enables usage of any acceptance probability.</p>
+<p>For more details see also: <a class="el" href="a00583.html#CITEREF_physicsmontecarlo">[11]</a> <a class="el" href="a00583.html#CITEREF_Sherer">[33]</a> <a class="el" href="a00583.html#CITEREF_simAnneal1">[38]</a> </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="a00031.html#_a3">simulatedAnnealingExample.cpp</a>.</dd>
 </dl></div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ac76a2e0019703f997d10958cb7039046"></a>
@@ -561,7 +561,7 @@ template&lt;typename F , typename PA &gt; </div>
 </div>
 </div>
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 5 2018 23:05:50 for jULIANT by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 26 2018 01:32:17 for jULIANT by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

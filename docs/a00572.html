@@ -149,7 +149,7 @@ Functions</h2></td></tr>
 <p>The minimum finding routines can be divided into two groups:</p><ul>
 <li>derivative-free optimization: Algorithms that that does not use derivative information in the classical sense to find optimal solutions (see julian::NonDerivativeMinimizer)</li>
 <li><p class="startli">derivative-based optimization: Algorithms basing on the calculation of gradient of cost function (see DerivativeMinimizer)</p>
-<p class="startli">Good introduction to minimization techniques see Chapter 10 of <a class="el" href="a00583.html#CITEREF_NumRec">[4]</a> and Chapter 6 of <a class="el" href="a00583.html#CITEREF_Sherer">[32]</a>. </p>
+<p class="startli">Good introduction to minimization techniques see Chapter 10 of <a class="el" href="a00583.html#CITEREF_NumRec">[4]</a> and Chapter 6 of <a class="el" href="a00583.html#CITEREF_Sherer">[33]</a>. </p>
 </li>
 </ul>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
@@ -183,13 +183,13 @@ Functions</h2></td></tr>
 </li>
 <li><p class="startli">Broyden-Fletcher-Goldfarb-Shanno</p>
 <p class="startli">BFGS method belongs to quasi-Newton methods. In quasi-Newton methods, the Hessian matrix of second derivatives doesn't need to be evaluated directly. Instead, the Hessian matrix is approximated using updates specified by gradient evaluations (or approximate gradient evaluations).</p>
-<p class="startli">This version of this minimizer is the most efficient version available, and is a faithful implementation of the line minimization scheme described in Fletcher’s Practical Methods of Optimization (<a class="el" href="a00583.html#CITEREF_fletcher">[33]</a>)</p>
+<p class="startli">This version of this minimizer is the most efficient version available, and is a faithful implementation of the line minimization scheme described in Fletcher’s Practical Methods of Optimization (<a class="el" href="a00583.html#CITEREF_fletcher">[34]</a>)</p>
 </li>
 <li><p class="startli">Steepest Descent</p>
 <p class="startli">Algorithm follows the downhill gradient of the function. After the step was made the algorithm calculates function value for new position. If new value of cost function is smaller step-size is doubled. If the downhill step leads to a higher function value then the algorithm backtracks and the step size is decreased using the parameter <b>tol</b>.</p>
 </li>
 </ul>
-<p>For more information see <a class="el" href="a00583.html#CITEREF_fletcher">[33]</a> , 10.6-10.7 chapter of <a class="el" href="a00583.html#CITEREF_NumRec">[4]</a> and GSL Docs ( <a href="https://www.gnu.org/software/gsl/doc/html/multimin.html">link</a>). </p>
+<p>For more information see <a class="el" href="a00583.html#CITEREF_fletcher">[34]</a> , 10.6-10.7 chapter of <a class="el" href="a00583.html#CITEREF_NumRec">[4]</a> and GSL Docs ( <a href="https://www.gnu.org/software/gsl/doc/html/multimin.html">link</a>). </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga24116ceb33265b961f3896330faa391ba053cef046d8b15a3e64c52e5b24edcc8"></a>FLETCHER_REEVES&#160;</td><td class="fielddoc">
 <p>Fletcher-Reeves conjugate gradient. </p>
@@ -607,7 +607,7 @@ template&lt;typename F &gt; </div>
 </div>
 </div>
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 5 2018 23:05:49 for jULIANT by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 26 2018 01:32:16 for jULIANT by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

@@ -172,7 +172,7 @@ Private Attributes</h2></td></tr>
 <p>6) Reading the next instrument ( <img class="formulaInl" alt="$isntr_3$" src="form_81.png"/>) with maturity <img class="formulaInl" alt="$date_3$" src="form_82.png"/>. Creating new curve <img class="formulaInl" alt="$C$" src="form_72.png"/> with dates <img class="formulaInl" alt="$= [date_1, date_2, date_3 ] $" src="form_83.png"/> and discount factors <img class="formulaInl" alt="$= [DF1, DF2, DF3]$" src="form_84.png"/></p>
 <p>7) Solving function f3 using root finding algorithm: <img class="formulaInl" alt="$f3(DF3) = isntr_{3}.price(C)$" src="form_85.png"/>.</p>
 <p>etc.</p>
-<p>The derivative of f function is calculated numerically using finite difference approximation. If discounting curve and projection curve are provided, they are used when instrument is priced. This approach enables estimating the curve in the multi-curve framework (see <a class="el" href="a00583.html#CITEREF_Fujii">[25]</a>).</p>
+<p>The derivative of f function is calculated numerically using finite difference approximation. If discounting curve and projection curve are provided, they are used when instrument is priced. This approach enables estimating the curve in the multi-curve framework (see <a class="el" href="a00583.html#CITEREF_Fujii">[26]</a>).</p>
 <dl class="section warning"><dt>Warning</dt><dd><a class="el" href="a00096.html" title="Class defines the interface of algorithms that perform estimation of interest rate curve (see Interpo...">Estimator</a> does not work properly with <a class="el" href="a00107.html" title="Class implements the flat backward interpolation technique. ">FlatBackward</a> interpolation. <a class="el" href="a00172.html" title="Interest rate curve estimating algorithm using the derivative root finder. ">RootFindingBootstrapper</a> estimates curve by varying last DF. In <a class="el" href="a00107.html" title="Class implements the flat backward interpolation technique. ">FlatBackward</a> the shape of the curve does not depend on last DF so calibration cannot be performed </dd></dl>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="a00009.html#_a37">bootstrapperComparison.cpp</a>, and <a class="el" href="a00027.html#_a24">rootFindingBootstrapperExample.cpp</a>.</dd>
 </dl></div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -444,7 +444,7 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 5 2018 23:05:50 for jULIANT by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 26 2018 01:32:17 for jULIANT by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

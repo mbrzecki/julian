@@ -18,7 +18,7 @@ namespace julian {
    *  \brief Interface for objects representing market models
    *
    * Market model is an object holding information about market state (interest rates, yields, volatility, asset prize) 
-   * and its dynamics (usually represented by stochastic process.
+   * and its dynamics (usually represented by stochastic process).
    *
    */
 
@@ -85,7 +85,7 @@ namespace julian {
   /** \ingroup marketmodels
    * \brief Class uses Curiously Recurring Template Pattern to implement polymorphic copy construction in every derived class implementing MarketModel.
    *
-   * For more details see \ref cpp_dp_deep_copy
+   * For more details see \ref cpp_dp_deepcopy
    */
   template<typename T>
   class DeeplyCopyableMarketModel : public MarketModel {

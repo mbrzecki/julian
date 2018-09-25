@@ -36,7 +36,7 @@ namespace julian {
   /** \ingroup pricing_engines
    * \brief Class uses Curiously Recurring Template Pattern to implement polymorphic copy construction in every derived class implementing PricingEngine.
    *
-   * For more details see \ref cpp_dp_deep_copy
+   * For more details see \ref cpp_dp_deepcopy
    */
   template<typename T>
   class DeeplyCopyablePricingEngine : public PricingEngine {

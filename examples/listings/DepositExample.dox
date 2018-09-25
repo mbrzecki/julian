@@ -8,7 +8,7 @@ Maturity: 2015-11-19
 Notional:  2'000'000.00
 Rate: 4.9500% (ACT365_Simple)
 
-	Prizing deposit
+	Pricing deposit
 
 Object: Deposit
 TradeDate: 2014-10-24

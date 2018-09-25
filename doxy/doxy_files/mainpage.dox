@@ -1,26 +1,31 @@
 
-/** \mainpage jUnified Library Integrating Analytical and Numerical Techiniques
+/** \mainpage jUnified Library Integrating Analytical and Numerical Techniques
 
 	@image html logo.jpg
 	
     \section intro Introduction
 
-    The project was used just for training purpose. Because you cannot be a good validation specialist when you do not develop models for your own.  
-    It was also a laboratory of testing new design solutions.
+	This project is open source C++ library that was aimed at efficient and flexible tool used in model validation.
     
-    \section dependent Dependencies
-    
-    For dependencies of library see \subpage cpp_lib
-
+    \section compilation Compilation
+	
+	Directory \a Build contains the CMake file generating the Makefile. CMake script creates compilation executables basing on cpp files kept in \a main  folder.
+	
+	List of libraries required by project to compile can be found here: \subpage cpp_lib
+	
     \section documentation Documentation
 
     Documentation was prepared using <a href = "http://www.doxygen.nl">  Doxygen v1.8.11</a> and applying css <a href = "https://www.bootstrapcdn.com">  Bootstrap </a> theme. 
 
+	\section repo Github
+	
+	Repo: https://github.com/mbrzecki/julian
+	
     \section author Authors
 
     Maciej Brzecki
    
-    \section julian Why Julian
+    \section julian Why JulianT
 
     While I was working in mBank I had to take a business trips to Lodz. Usually, while I was sitting on the <a href = "https://www.youtube.com/watch?v=NLT_Yx5yhGo"> train</a> to Lodz named \a TLK \a Tuwim
     I was working on this library. This is why I called the library jULIAN in memory of great polish poet <a href = "https://en.wikipedia.org/wiki/Julian_Tuwim">  Julian Tuwim</a>  	

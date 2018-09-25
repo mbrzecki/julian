@@ -75,6 +75,6 @@ int main() {
   //
   // Value deposits
   //
-  std::cout << "\tPrizing deposit\n\n";
+  std::cout << "\tPricing deposit\n\n";
   deposit4.valuation(discounting_curve);
 }

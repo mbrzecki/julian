@@ -91,15 +91,19 @@ add_library(julek OBJECT ${SOURCES})
 # creating executables on the basis of cpp files in mains directory
 
 file( GLOB APP_SOURCES "../mains/*.cpp" )
-foreach( testsourcefile ${APP_SOURCES} )
+foreach( sourcefile ${APP_SOURCES} )
 
-	 string( REGEX REPLACE "^.*/mains/" "" newstring ${testsourcefile})
-	 string( REPLACE ".cpp" "" testname ${newstring} )
-	 string( CONCAT path [../test2 ${newsrting} "/" ${testname} ".cpp" ])
-	 string( REPLACE "[" "" path ${path} )
-	 string( REPLACE "]" "" path ${path} )
+	 string( REGEX REPLACE "^.*/mains/" "" filename ${sourcefile})
+	 string( REPLACE ".cpp" "" name ${filename} )
 
-	 add_executable( ${testname} ${testsourcefile} $<TARGET_OBJECTS:julek>)
-	 target_link_libraries(${testname} ${LINK_FLAG})
+	 add_executable( ${name} ${sourcefile} $<TARGET_OBJECTS:julek>)
+	 target_link_libraries(${name} ${LINK_FLAG})
 	 
-endforeach( testsourcefile ${APP_SOURCES} )
+endforeach( sourcefile ${APP_SOURCES} )
+
+option(TESTS "Add test suites" OFF)
+if(TESTS)
+    add_executable( TestSuites ../tests/test_suite.cpp $<TARGET_OBJECTS:julek>)
+    target_link_libraries(TestSuites ${LINK_FLAG})    
+endif(TESTS)
+unset(TESTS CACHE)

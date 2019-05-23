@@ -2,5 +2,10 @@
 #define BOOST_TEST_MODULE jULIAN_TEST_SUITES
 #include <boost/test/unit_test.hpp>
 
-#include "test_suite1.hpp"
+namespace tt = boost::test_tools;
+
+#include <juliant.hpp>
+#include "Container.hpp"
+
+#include "OptionGreeksTest.hpp"
 

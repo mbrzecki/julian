@@ -5,6 +5,7 @@
 #include <string>
 #include <utils/vectorOperations.hpp>
 #include <boost/assert.hpp>
+#include <numeric>
 
 namespace julian {
 
@@ -19,11 +20,8 @@ namespace julian {
   
   DataFrame::DataFrame(std::string file_name, char delimiter,
 		       bool first_row_is_column_names, int primery_key) {
-    // parsing file
     this->parseFile(file_name, delimiter);
-    // creating column names
     this->createColumnNames(first_row_is_column_names);
-    // creating primary key
     if (primery_key) {
       for (unsigned int i = 0; i < data_.size(); i++) {
 	primary_key_[data_[i][primery_key-1]] = i+1;
@@ -205,38 +203,42 @@ namespace julian {
    * old rows are filled with "." representing missing.
    */
   void DataFrame::append(const DataEntryClerk& entry) {
-    if (ncols_) {
-      for (auto item : entry.data_) { 
-	if ( column_names_.find(item.first) == column_names_.end() ) {
-	  column_names_[item.first] = column_names_.size();
-	  ncols_++;
-	  for (auto& row : data_) {
-	    row.push_back(".");
-	  }
-	} 
-      }
-      std::vector<std::string> row(ncols_,".");
-      for (auto item : entry.data_) {
-	row.at(column_names_[item.first]-1) = item.second;
-      }
-      data_.push_back(row);
-    } else {
-      std::vector<std::string> row;
-      for (auto item : entry.data_) {
-	column_names_[item.first] = column_names_.size();
-	row.push_back(item.second);
-	ncols_++;
-      }
-      data_.push_back(row);
-    }
-    nrows_++;
+     if (ncols_) {
+       for (auto item : entry.data_) {
+	 if ( column_names_.find(item.first) == column_names_.end() ) {
+	   column_names_[item.first] = column_names_.size();
+	   ncols_++;
+	   for (auto& row : data_) {
+	     row.push_back(".");
+	   }
+	 } 
+       }
+       std::vector<std::string> row(ncols_,".");
+       for (auto item : entry.data_) {
+	 row.at(column_names_[item.first]-1) = item.second;
+       }
+       data_.push_back(row);
+     } else {
+       std::vector<std::string> row;
+       for (auto item : entry.data_) {
+	 column_names_[item.first] = ++ncols_;
+	 row.push_back(item.second);
+       }
+       data_.push_back(row);
+     }
+     nrows_++;
+  }
+  
+  /** \brief Number of columns and rows
+   */
+  void DataFrame::shape() const {
+    std::cout << ncols_ << " cols " << nrows_ << " rows" << std::endl;
   }
   
   /** \brief Prints DataFrame
    */
   void DataFrame::print(int n_rows) {
     auto column_names = getColumnNames();
-    std::cout << "\n";
     // width of columns
     std::vector<int> widths;
     for (int i = 0; i < ncols_; i++) {
@@ -246,15 +248,12 @@ namespace julian {
      	auto cell = data_[j][i];
      	width = cell.size() > width ? cell.size() : width;
       }
-      widths.push_back(width+3);
+     widths.push_back(width+3);
     }
-    
+    int line_lenght = std::accumulate(widths.begin(), widths.end(), 0);
     // print line
-    for (auto& n : widths)
-      for (int i =0; i < n ; i++)
-    	std::cout << "-";
-    std::cout << std::endl;
-
+    for (int i =0; i < line_lenght ; i++) std::cout << "-";
+    std::cout << "\n";
     // printing col names
     for (int i = 0; i < ncols_; i++) {
       std::cout << std::setw(widths.at(i)) << column_names.at(i);
@@ -262,10 +261,8 @@ namespace julian {
     std::cout << std::endl;
 
     // print line
-    for (auto& n : widths)
-      for (int i =0; i < n ; i++)
-    	std::cout << "-";
-    std::cout << std::endl;
+    for (int i =0; i < line_lenght ; i++) std::cout << "-";
+    std::cout << "\n";
 
     // printing rows
     for (int j = 0 ; j < nrows_; j++) {
@@ -279,10 +276,8 @@ namespace julian {
     }
     
     // print line
-    for (auto& n : widths)
-      for (int i =0; i < n ; i++)
-    	std::cout << "-";
-    std::cout << std::endl;
+    for (int i =0; i < line_lenght ; i++) std::cout << "-";
+    std::cout << "\n";
   }
 
   /** \brief prints DataFrame to csv file

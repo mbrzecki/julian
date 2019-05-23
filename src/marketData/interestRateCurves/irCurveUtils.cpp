@@ -40,7 +40,7 @@ namespace ir {
       input.add("FWD3M", c->fwdRate(d, 3*MONTH));
       input.add("FWD6M", c->fwdRate(d, 6*MONTH));
 
-      df.append(input);
+      //df.append(input);
     }
     return df;
   }
@@ -196,7 +196,7 @@ namespace ir {
       input.add("Quote", quote);
       input.add("ParRate", par_rate);
       input.add("Calibration", calib);
-      df.append(input);
+      // df.append(input);
     }
     return df;
   }

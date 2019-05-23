@@ -33,9 +33,12 @@ namespace julian {
   class DataFrame {
   public:
     DataFrame(){};
-    DataFrame(std::string file_name, char delimiter, bool first_row_is_column_names, int primery_key = 0);
+    DataFrame(std::string file_name,
+	      char delimiter,
+	      bool first_row_is_column_names,
+	      int primery_key = 0);
 
-    std::string operator()(const int col, const  int row);
+    std::string operator()(const int col, const int row);
     std::string operator()(const std::string col, const int row);
     std::string operator()(const std::string col, const std::string row);
 
@@ -56,7 +59,8 @@ namespace julian {
     
     void append(const DataEntryClerk&);
     void append(const DataFrame&);
-    
+
+    void shape() const;
     void print(int n_rows = -1);
     void printToCsv(std::string file_name, char delimiter = ';');
     

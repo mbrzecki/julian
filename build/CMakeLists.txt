@@ -82,7 +82,14 @@ set(SOURCES ${DATES} ${YFS} ${CALENDARS} ${TIMEGRIDS}
 	    ${DISTRIBUTION} ${INTERPOLATION} ${NUMALG} ${REGRESSION} ${STATS} ${STOCHPROCESS} ${RNGS}
 	    ${UTILS})	
 	    
-set(LINK_FLAG ${GSL_LIBRARIES} ${OOQP_LIBRARIES} ${MA27_LIBRARY} ${GFORTRAN} ${BLAS_LIBRARIES} ${Boost_PROGRAM_OPTIONS_LIBRARY} ${Boost_SERIALIZATION_LIBRARY} ${Boost_UNIT_TEST_FRAMEWORK_LIBRARY} ${ARMADILLO_LIBRARIES})
+set(LINK_FLAG ${GSL_LIBRARIES}
+	      ${OOQP_LIBRARIES}
+	      ${MA27_LIBRARY}
+	      ${GFORTRAN}
+	      ${BLAS_LIBRARIES}
+	      ${Boost_PROGRAM_OPTIONS_LIBRARY}
+	      ${Boost_SERIALIZATION_LIBRARY}
+	      ${ARMADILLO_LIBRARIES})
 
 # object library
 
@@ -103,7 +110,14 @@ endforeach( sourcefile ${APP_SOURCES} )
 
 option(TESTS "Add test suites" OFF)
 if(TESTS)
-    add_executable( TestSuites ../tests/test_suite.cpp $<TARGET_OBJECTS:julek>)
-    target_link_libraries(TestSuites ${LINK_FLAG})    
+	file( GLOB TEST_SOURCES "../tests/*.cpp" )
+	foreach( sourcefile ${TEST_SOURCES} )
+		 string( REGEX REPLACE "^.*/tests/" "" filename ${sourcefile})
+		 string( REPLACE ".cpp" "" name ${filename} )
+
+		 add_executable( ${name} ${sourcefile} $<TARGET_OBJECTS:julek>)
+		 target_link_libraries(${name} ${LINK_FLAG} ${Boost_UNIT_TEST_FRAMEWORK_LIBRARY})
+	endforeach( sourcefile ${APP_SOURCES} )	  
+
 endif(TESTS)
 unset(TESTS CACHE)

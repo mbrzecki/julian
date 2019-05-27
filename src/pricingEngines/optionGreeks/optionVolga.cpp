@@ -87,15 +87,15 @@ namespace julian {
 			     const SmartPointer<PricingEngine>& prizer,
 			     const SmartPointer<Option>& option) {
     auto pv_key =  std::make_tuple(0.0, 0.0);
-    auto pv = rr.intermediate_results_[pv_key];
-
     auto fwd_key = std::make_tuple(0.0, h_);
     auto fwdfwd_key = std::make_tuple(0.0, 2.0*h_);
+
+    auto pv = rr.intermediate_results_[pv_key];
     double fwd, fwdfwd;
 
     if (rr.intermediate_results_.find(fwd_key) == rr.intermediate_results_.end()) {
       SmartPointer<MarketModel> bumped = model;
-      bumped->bumpAssetPrize(h_);
+      bumped->bumpVolatility(h_);
       fwd = prizer->prize(bumped, option);
       rr.intermediate_results_[fwd_key] = fwd;
     } else {
@@ -104,7 +104,7 @@ namespace julian {
 
     if (rr.intermediate_results_.find(fwdfwd_key) == rr.intermediate_results_.end()) {
       SmartPointer<MarketModel> bumped = model;
-      bumped->bumpAssetPrize(2.0*h_);
+      bumped->bumpVolatility(2.0*h_);
       fwdfwd = prizer->prize(bumped, option);
       rr.intermediate_results_[fwdfwd_key] = fwdfwd;
     } else {
@@ -131,7 +131,7 @@ namespace julian {
 
     if (rr.intermediate_results_.find(bwd_key) == rr.intermediate_results_.end()) {
       SmartPointer<MarketModel> bumped = model;
-      bumped->bumpAssetPrize(-h_);
+      bumped->bumpVolatility(-h_);
       bwd = prizer->prize(bumped, option);
       rr.intermediate_results_[bwd_key] = bwd;
     } else {
@@ -140,7 +140,7 @@ namespace julian {
     
     if (rr.intermediate_results_.find(bwdbwd_key) == rr.intermediate_results_.end()) {
       SmartPointer<MarketModel> bumped = model;
-      bumped->bumpAssetPrize(-2.0*h_);
+      bumped->bumpVolatility(-2.0*h_);
       bwdbwd = prizer->prize(bumped, option);
       rr.intermediate_results_[bwdbwd_key] = bwdbwd;
     } else {

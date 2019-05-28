@@ -59,7 +59,7 @@ namespace julian {
       break;
     case Date::Format::date3:
       year_ = atoi((date.substr(0, 4)).c_str());
-      month_str = (date.substr(5, 3)).c_str();
+      month_str = (date.substr(4, 3)).c_str();
       day_ = atoi((date.substr(7, 2)).c_str());
 
       if (month_str == "JAN") month_ = 1;
@@ -124,21 +124,23 @@ namespace julian {
   }
 
   std::string Date::getString() const {
-    std::string a, b;
+    std::string div1, div2;
 
     if (month_ < 10) {
-      a = "-0";
+      div1 = "-0";
     } else {
-      a = "-";
+      div1 = "-";
     }
 
     if (day_ < 10) {
-      b = "-0";
+      div2 = "-0";
     } else {
-      b = "-";
+      div2 = "-";
     }
 
-    std::string ret = std::to_string(year_) + a + std::to_string(month_) + b + std::to_string(day_);
+    std::string ret = std::to_string(year_)
+      + div1 + std::to_string(month_)
+      + div2 + std::to_string(day_);
     return ret;
   }
 
@@ -175,7 +177,18 @@ namespace julian {
    * Method increments date by a one day. 
    */
 
-  void Date::operator++() {
+  Date Date::operator++(int) {
+    Date result(*this);
+    ++(*this);
+    return result;
+  }
+
+  /** \brief Moves date to next date
+   *
+   * Method increments date by a one day. 
+   */
+
+  Date& Date::operator++() {
     Date date1;
     Date date2;
     Date date3;
@@ -201,6 +214,7 @@ namespace julian {
       day_ = 1;
       month_ = 1;
     }
+    return *this;
   }
 
   /** \brief Moves date back to last day 
@@ -208,7 +222,18 @@ namespace julian {
    * Method decrements date by a one day.  
    */
 
-  void Date::operator--() {
+  Date Date::operator--(int) {
+    Date result(*this);
+    --(*this);
+    return result;
+  }
+
+  /** \brief Moves date back to last day 
+   * 
+   * Method decrements date by a one day.  
+   */
+
+  Date& Date::operator--() {
     Date date1(year_, month_, day_ - 1);
     Date date1a(year_, month_, day_ - 2);
     Date date1b(year_, month_, day_ - 3);
@@ -241,6 +266,7 @@ namespace julian {
       month_ = 12;
       day_ = 31;
     }
+    return *this;
   }
 
   /** \brief Moves to end of month 

@@ -41,8 +41,6 @@ namespace julian {
     Date(int year, int month, int day);
     Date(int yyyymmdd);
     Date(std::string, Date::Format);
-
-
     
     std::string getString() const;
     int getDay() const;
@@ -62,8 +60,10 @@ namespace julian {
     bool isEndOfMonth() const;
     bool isEndOfYear() const;
 
-    void operator++();
-    void operator--();
+    Date& operator++();
+    Date operator++(int);
+    Date& operator--();
+    Date operator--(int);
 
     void operator+=(Tenor t);
     void operator-=(Tenor t);
